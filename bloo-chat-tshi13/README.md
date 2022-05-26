@@ -6,8 +6,6 @@ After cloning the application, run `npm install` to install the dependencies.
 
 To run the application, use the command `npm run dev`.
 
-Detailed instructions are at this [url](https://cs280spring.github.io/hw/hw5/index.html).
-
 The application is deployed on [Heroku](https://bloochat-tshi13.herokuapp.com/).
 
 
