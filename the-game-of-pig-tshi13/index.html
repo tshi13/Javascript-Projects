@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pig!</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <style>
+    #die {
+      font-size: 6rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="jumbotron text-center">
+    <h1>The Game of <img id="pig" src="pig.png" width="80rem">!</h1>
+  </div>  
+  <div class="container">
+    <div class="row">
+      <div class="col-sm my-1 text-center">
+        <div id="die">&#x2680</div>
+      </div>
+    </div>
+  </div>
+  <div class="container my-5">
+    <div class="row">
+      <div class="col-sm my-1">
+        <button id="roll" class="btn btn-success btn-lg btn-block">Roll</button>
+      </div>
+      <div class="col-sm my-1 text-center pt-2">
+        <div id="result">Player-1 turn!</div>
+      </div>
+      <div class="col-sm my-1">
+        <button id="hold" class="btn btn-danger btn-lg btn-block">Hold</button>
+      </div>
+    </div>
+  </div>
+  <div class="container my-5">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Scores</h5>
+        <div>
+          <div class="row">
+            <div class="col-3 pt-2" style="height:40px">Player-1</div>
+            <div class="col-9">
+              <div class="progress my-2" style="height:40px">
+                  <div id="p1-score" class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                  <div id="p1-hold" class="progress-bar progress-bar-striped bg-info progress-bar-animated" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-3 pt-2" style="height:40px">Player-2</div>
+            <div class="col-9">
+              <div class="progress my-2" style="height:40px">
+                <div id="p2-score" class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                <div id="p2-hold" class="progress-bar progress-bar-striped bg-info progress-bar-animated" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>  
+</body>
+</html>

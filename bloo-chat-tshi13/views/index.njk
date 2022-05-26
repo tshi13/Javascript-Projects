@@ -1,0 +1,25 @@
+{% extends "parent.njk" %}
+
+
+{% block a %}
+    <div class="chat">
+      <h1>Welcome to
+        <br><br>Bloo Chat!<br><br>
+        <br><br>
+        <p style="color:#a9d7eb;font-size:15px;">Please login or register new account</p>
+        </h1>
+      <form class = "form1" action="/chatroom" method = "POST" id="chatForm">
+        <input name="uname" id="txt" autocomplete="off" autofocus="on" placeholder="type your username here..."/>
+        <input name="password" id="txt" autocomplete="off" autofocus="on" placeholder="type your password here..."/>
+        <button type="submit">Login</button>
+      </form>
+
+      <form class = "form2" action="/register" method = "POST" id="chatForm">
+        <input name="uname" id="txt" autocomplete="off" autofocus="on" placeholder="new username"/>
+        <input name="password" id="txt" autocomplete="off" autofocus="on" placeholder="new password"/>
+        <button type="submit">Register</button>
+      </form>
+    </div>
+{% endblock %}
+
+

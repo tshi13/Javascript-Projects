@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font: 13px Helvetica, Arial;
+  color: rgb(255, 255, 255);
+  opacity: 1;
+  background: linear-gradient(to right, #360033, #0b8793) fixed;
+}
+
+
+h1 {
+  padding-top: 150px;
+  padding-left: 80px;
+  font-size: xx-large;
+}
+
+form {
+  background: #fff;
+  padding: 3px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.form1 {
+  background: #fff;
+  padding: 3px;
+  position: absolute;
+  bottom: 90px;
+  width: 100%;
+}
+
+.form2 {
+  background: #fff;
+  padding: 3px;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+}
+
+form input {
+  padding: 10px;
+  width: 80%;
+  margin-right: 0.5%;
+}
+
+form label {
+  display: none;
+}
+
+.form1 button {
+  width: 14%;
+  background: #279024;
+  border: none;
+  padding: 10px;
+  margin-left: 2%;
+  color: white;
+}
+
+.form2 button {
+  width: 14%;
+  background: #0d5b9f;
+  border: none;
+  padding: 10px;
+  margin-left: 2%;
+  color: white;
+}
+
+form button {
+  width: 14%;
+  background: #0d9f4c;
+  border: none;
+  padding: 10px;
+  margin-left: 2%;
+  color: white;
+}
+
+#messages {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 80px;
+  height: 100%;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+#messages ul {
+  list-style-type: none;
+}
+
+#messages li {
+  padding: 5px 10px;
+}
+
+.chat {
+  display: block;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.2);
+  width: 480px;
+  height: 600px;
+}
+
+::-webkit-scrollbar {
+  height: 0.8rem;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 0.25rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #000051;
+  border-radius: 0.25rem;
+}
+
+.username {
+  background-color: #000051;
+  padding: 0 0.6rem 0 0.6rem;
+  border-radius: 0.6rem;
+  font-weight: bold;
+}

@@ -1,0 +1,27 @@
+{
+  "name": "bloo-chat",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "DEBUG=bloo-chat nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "alert": "^5.0.10",
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.20.0",
+    "debug": "^4.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^6.3.1",
+    "nunjucks": "^3.2.2",
+    "react-scripts": "^5.0.1",
+    "socket.io": "^2.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
